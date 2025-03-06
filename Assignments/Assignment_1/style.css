@@ -1,0 +1,55 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+}
+h1, h2{
+    color: blue; 
+    background-color: #e0f7fa; 
+    text-decoration: underline; 
+    padding: 10px; 
+    margin-bottom: 10px; 
+}
+p {
+    text-align: justify; 
+    line-height: 1.6; 
+    margin-bottom: 10px; 
+}
+ul {
+    list-style-type: none; 
+    padding-left: 20px; 
+}
+
+/* Style for each list item (li) */
+ul li {
+    position: relative; 
+    padding-left: 25px; 
+    margin-bottom: 8px; 
+}
+
+/* Custom bullet style */
+ul li::before {
+    content: ''; 
+    position: absolute; 
+    left: 0; 
+    top: 50%; 
+    width: 8px; 
+    height: 8px; 
+    border-radius: 50%; 
+    background-color: #007bff; 
+    transform: translateY(-50%); 
+}
+
+/* Optional: Hover effect on list items */
+ul li:hover {
+    color: #007bff; 
+    cursor: pointer; 
+}
