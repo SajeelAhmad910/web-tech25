@@ -11,7 +11,36 @@ body {
     margin: auto;
     padding: 20px;
 }
-h1, h2{
+header {
+    text-align: center; /* Centers the content inside the header */
+    margin-bottom: 20px;
+}
+h1 {
+    font-size: 3em; /* Makes the font larger */
+    color: blue;
+    background-color: #e0f7fa; /* Light blue background */
+    text-decoration: underline; /* Underline the heading */
+    padding: 20px;
+    margin-bottom: 10px;
+}
+
+/* Subheading Styling for Designation (h2) */
+h2.designation {
+    font-size: 1.5em; /* Makes the font slightly smaller than h1 */
+    color: #007bff; /* Blue color for subheading */
+    font-weight: normal; /* Makes the font weight normal */
+    margin-bottom: 20px; /* Adds space below the subheading */
+}
+.profile-image {
+    width: 150px; /* Width of the image */
+    height: 150px; /* Height of the image */
+    border-radius: 50%; /* Makes the image circular */
+    object-fit: cover; /* Ensures the image covers the given width and height without distortion */
+    display: block; /* Makes the image a block element */
+    margin: 0 auto 20px; /* Centers the image and adds space below */
+    
+}
+ h3{
     color: blue; 
     background-color: #e0f7fa; 
     text-decoration: underline; 
