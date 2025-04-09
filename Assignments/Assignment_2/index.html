@@ -1,97 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>E-Commerce Landing Page</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Loake Inspired</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
-    <nav class="navbar">
-        <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#products">Products</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
+  <!-- Top Bar -->
+  <div class="top-bar">
+    <div class="left">Shipping to: 🇵🇰</div>
+    <div class="center">FREE UK STANDARD DELIVERY & FREE UK RETURNS!</div>
+    <div class="right">
+      <a href="#">Store Locator</a>
+      <a href="#">Factory Outlet</a>
+      <a href="#">Our Journal</a>
+    </div>
+  </div>
+
+  <!-- Navigation Header -->
+  <header class="main-header">
+    <nav class="nav-left">
+      <a href="#">New Arrivals</a>
+      <a href="#">Men's Shoes</a>
+      <a href="#">Accessories</a>
+      <a href="#">Repairs</a>
     </nav>
+    <div class="logo">Loake<br><span>Shoemakers</span></div>
+    <div class="nav-right">
+      <input type="text" placeholder="Search..." />
+      <span class="icon">👤</span>
+      <span class="icon">🛒<sup>0</sup></span>
+    </div>
+  </header>
 
-    <header class="hero" id="home">
-        <div class="hero-content">
-            <h1>Welcome to Our E-Shop</h1>
-            <p>Your one-stop shop for everything you need!</p>
-            <a href="#products" class="btn">Shop Now</a>
-        </div>
-    </header>
+  <!-- Hero Slider Section -->
+  <section class="hero" id="hero">
+    <div class="hero-text">
+      <h5>The Bannister Trainer</h5>
+      <h1><em>Switch Off in Style</em></h1>
+      <a href="#" class="cta">Shop Now</a>
+    </div>
+    <button class="slider-btn left" onclick="prevSlide()">&#10094;</button>
+    <button class="slider-btn right" onclick="nextSlide()">&#10095;</button>
+  </section>
 
-    <section id="products" class="product-showcase">
-        <h2>Featured Products</h2>
-        <div class="products">
-            <div class="product">
-                <img src="hand.jpg" alt="Product 1">
-                <h3>Dove</h3>
-                <p>$29.99</p>
-                <p>Good skincare soap</p>
-                <a href="#" class="btn">Buy Now</a>
-            </div>
-            <div class="product">
-                <img src="oil.jpg" alt="Product 2">
-                <h3>Bioamla</h3>
-                <p>$39.99</p>
-                <p>Lamby ghany Bal.</p>
-                <a href="#" class="btn">Buy Now</a>
-            </div>
-            <div class="product">
-                <img src="shampo.jpg" alt="Product 3">
-                <h3>Shampo</h3>
-                <p>$19.99</p>
-                <p>Grow your hair extra long</p>
-                <a href="#" class="btn">Buy Now</a>
-            </div>
-            <div class="product">
-                <img src="acid.jpg" alt="Product 4">
-                <h3>Acne Clear</h3>
-                <p>$49.99</p>
-                <p>Remove Acne From your Face</p>
-                <a href="#" class="btn">Buy Now</a>
-            </div>
-            <div class="product">
-                <img src="shampo.jpg" alt="Product 3">
-                <h3>Shampo</h3>
-                <p>$19.99</p>
-                <p>Grow your hair extra long</p>
-                <a href="#" class="btn">Buy Now</a>
-            </div>
-            <div class="product">
-                <img src="oil.jpg" alt="Product 2">
-                <h3>Bioamla</h3>
-                <p>$39.99</p>
-                <p>Lamby ghany Bal.</p>
-                <a href="#" class="btn">Buy Now</a>
-            </div>
-            <div class="product">
-                <img src="acid.jpg" alt="Product 4">
-                <h3>Acne Clear</h3>
-                <p>$49.99</p>
-                <p>Remove Acne From your Face</p>
-                <a href="#" class="btn">Buy Now</a>
-            </div>
-            <div class="product">
-                <img src="hand.jpg" alt="Product 1">
-                <h3>Dove</h3>
-                <p>$29.99</p>
-                <p>Good skincare soap</p>
-                <a href="#" class="btn">Buy Now</a>
-            </div>
-        </div>
-    </section>
+  <section class="feature-banner" id="featureBanner">
+    <div class="feature-banner__card">
+      <img src="images/pic-10.jpg" alt="Men's Shoes" />
+      <div class="feature-banner__content">
+        <span class="feature-banner__label">MEN'S SHOES</span>
+        <p class="feature-banner__subheading">ICONIC STYLES</p>
+        <h2 class="feature-banner__title">Our Bestsellers</h2>
+        <a href="#" class="feature-banner__cta">SHOP NOW</a>
+      </div>
+    </div>
+    <div class="feature-banner__card">
+      <img src="images/pic-9.jpg" alt="New Arrivals" />
+      <div class="feature-banner__content">
+        <span class="feature-banner__label">MEN'S SHOES</span>
+        <p class="feature-banner__subheading">HERITAGE REIMAGINED</p>
+        <h2 class="feature-banner__title">New Season Arrivals</h2>
+        <a href="#" class="feature-banner__cta">SHOP NOW</a>
+      </div>
+    </div>
+  </section>
 
-    <footer>
-        <div class="footer-content">
-            <p>Contact us: info@beautybox.com | +92300-1254087</p>
-            <div class="social-media">
-                <a href="#">Facebook</a> | <a href="#">Instagram</a> | <a href="#">Twitter</a>
-            </div>
-        </div>
-    </footer>
+  <!-- Shop by Style Section -->
+
+  <section class="style-grid__section">
+    <div class="style-grid__header">
+      <p class="style-grid__subtitle">SHOP BY STYLE</p>
+      <h2 class="style-grid__title">Styles to <em>Suit Every Occasion</em></h2>
+    </div>
+    <div class="style-grid__container">
+      <div class="style-grid__item">
+        <img src="images/pic-12.jpg" alt="Loafers" />
+        <p class="style-grid__label">LOAFERS</p>
+      </div>
+      <div class="style-grid__item">
+        <img src="images/pic-13.jpg" alt="Trainers" />
+        <p class="style-grid__label">TRAINERS</p>
+      </div>
+      <div class="style-grid__item">
+        <img src="images/pic-17.jpg" alt="Boat Shoes" />
+        <p class="style-grid__label">BOAT SHOES</p>
+      </div>
+      <div class="style-grid__item">
+        <img src="images/pic-14.jpg" alt="Brogues" />
+        <p class="style-grid__label">BROGUES</p>
+      </div>
+      <div class="style-grid__item">
+        <img src="images/pic-15.jpg" alt="Boots" />
+        <p class="style-grid__label">BOOTS</p>
+      </div>
+    </div>
+  </section>
+  
+
+  <script src="script.js"></script>
 </body>
 </html>
