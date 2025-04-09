@@ -295,3 +295,68 @@ body {
   text-transform: uppercase;
   text-shadow: 0 1px 3px rgba(0,0,0,0.5);
 }
+
+/*  */
+.gift-banner {
+  position: relative;
+  background-image: url('images/pic-8.jpg'); /* Replace with your image */
+  background-size: cover;
+  background-position: center;
+  height: 500px;
+  margin: 20px;
+  color: white;
+  font-family: 'Georgia', serif;
+}
+
+.gift-banner__overlay {
+  background: rgba(0, 0, 0, 0.3); /* Subtle dark overlay */
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 0 40px 60px; 
+  
+}
+
+.gift-banner__content {
+  text-align: center;
+  max-width: 800px;
+  padding: 0 20px;
+}
+
+.gift-banner__tag {
+  position: absolute;
+  top: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid white;
+  border-radius: 50px;
+  padding: 10px 20px;
+  font-size: 12px;
+  letter-spacing: 2px;
+  z-index: 2;
+}
+
+.gift-banner__text {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 30px;
+  font-weight: lighter;
+}
+
+.gift-banner__button {
+  text-decoration: none;
+  color: white;
+  font-weight: lighter;
+  font-size: 16px;
+  letter-spacing: 1px;
+  border-bottom: 2px solid white;
+  transition: opacity 0.3s;
+}
+
+.gift-banner__button:hover {
+  opacity: 0.8;
+}
