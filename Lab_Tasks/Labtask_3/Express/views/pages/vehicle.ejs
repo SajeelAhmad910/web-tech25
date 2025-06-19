@@ -1,0 +1,23 @@
+<%- include('../partials/navbar') %>
+
+<section class="style-grid__section">
+  <div class="style-grid__header">
+    <p class="style-grid__subtitle">Vehicle Collection</p>
+    <h2 class="style-grid__title">Available <em>Vehicles</em></h2>
+  </div>
+
+  <div class="style-grid__container">
+    <% if (vehicles && vehicles.length > 0) { %>
+      <% vehicles.forEach(vehicle => { %>
+        <div class="style-grid__item">
+          <img src="/uploads/<%= vehicle.image %>" alt="<%= vehicle.name %>" />
+          <p class="style-grid__label"><%= vehicle.name %> - <%= vehicle.type %></p>
+          <p class="style-grid__label">Brand: <%= vehicle.brand %></p>
+          <p class="style-grid__label">Rs. <%= vehicle.price %></p>
+        </div>
+      <% }) %>
+    <% } else { %>
+      <p>No vehicles available.</p>
+    <% } %>
+  </div>
+</section>

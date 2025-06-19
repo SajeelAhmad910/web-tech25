@@ -1,0 +1,108 @@
+/* checkout.css */
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 20px;
+}
+
+.checkout-container {
+    max-width: 500px;
+    margin: auto;
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.checkout-container h2 {
+    text-align: center;
+    margin-bottom: 25px;
+    color: #343a40;
+}
+
+form .form-group {
+    margin-bottom: 15px;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+/* Highlight invalid fields */
+form input.invalid,
+form textarea.invalid {
+    border-color: #e74c3c;
+    background-color: #fff6f6;
+}
+
+/* Style for error messages */
+form .error-message {
+    color: #e74c3c;
+    font-size: 14px;
+    margin-top: 4px;
+    display: block;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 500;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+input:focus,
+textarea:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 4px rgba(0, 123, 255, 0.4);
+    outline: none;
+}
+
+.invalid {
+    border-color: #dc3545 !important;
+    background-color: #fff5f5;
+}
+
+small.error-message {
+    color: #dc3545;
+    font-size: 0.85rem;
+    margin-top: 5px;
+    display: block;
+}
+
+.submit-btn {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 12px;
+    font-size: 1rem;
+    width: 100%;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.submit-btn:hover {
+    background-color: #0056b3;
+}
+
+@media (max-width: 576px) {
+    .checkout-container {
+        padding: 20px;
+    }
+}

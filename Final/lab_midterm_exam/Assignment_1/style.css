@@ -1,0 +1,84 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+}
+header {
+    text-align: center; /* Centers the content inside the header */
+    margin-bottom: 20px;
+}
+h1 {
+    font-size: 3em; /* Makes the font larger */
+    color: blue;
+    background-color: #e0f7fa; /* Light blue background */
+    text-decoration: underline; /* Underline the heading */
+    padding: 20px;
+    margin-bottom: 10px;
+}
+
+/* Subheading Styling for Designation (h2) */
+h2.designation {
+    font-size: 1.5em; /* Makes the font slightly smaller than h1 */
+    color: #007bff; /* Blue color for subheading */
+    font-weight: normal; /* Makes the font weight normal */
+    margin-bottom: 20px; /* Adds space below the subheading */
+}
+.profile-image {
+    width: 150px; /* Width of the image */
+    height: 150px; /* Height of the image */
+    border-radius: 50%; /* Makes the image circular */
+    object-fit: cover; /* Ensures the image covers the given width and height without distortion */
+    display: block; /* Makes the image a block element */
+    margin: 0 auto 20px; /* Centers the image and adds space below */
+    
+}
+ h3{
+    color: blue; 
+    background-color: #e0f7fa; 
+    text-decoration: underline; 
+    padding: 10px; 
+    margin-bottom: 10px; 
+}
+p {
+    text-align: justify; 
+    line-height: 1.6; 
+    margin-bottom: 10px; 
+}
+ul {
+    list-style-type: none; 
+    padding-left: 20px; 
+}
+
+/* Style for each list item (li) */
+ul li {
+    position: relative; 
+    padding-left: 25px; 
+    margin-bottom: 8px; 
+}
+
+/* Custom bullet style */
+ul li::before {
+    content: ''; 
+    position: absolute; 
+    left: 0; 
+    top: 50%; 
+    width: 8px; 
+    height: 8px; 
+    border-radius: 50%; 
+    background-color: #007bff; 
+    transform: translateY(-50%); 
+}
+
+/* Optional: Hover effect on list items */
+ul li:hover {
+    color: #007bff; 
+    cursor: pointer; 
+}

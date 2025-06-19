@@ -1,0 +1,32 @@
+<!-- Updated navbar.ejs with Vehicles button -->
+<div class="top-bar">
+  <div class="left">Shipping to: 🇵🇰</div>
+  <div class="center">FREE UK STANDARD DELIVERY & FREE UK RETURNS!</div>
+  <div class="right">
+    <a href="/vehicles">Vehicles</a>
+    <a href="#">Store Locator</a>
+    <a href="#">Factory Outlet</a>
+    <a href="#">Our Journal</a>
+  </div>
+</div>
+
+<header class="main-header">
+  <nav class="nav-left">
+    <a href="/">Home</a>
+    <a href="/products">Products</a>
+    <a href="/vehicles">Vehicles</a>
+    <a href="#">Accessories</a>
+    <a href="#">Repairs</a>
+  </nav>
+  <div class="logo">Loake<br><span>Shoemakers</span></div>
+  <div class="nav-right">
+    <input type="text" placeholder="Search..." />
+    <% if (user) { %>
+      <span class="icon"><%= user.name %></span>
+      <a href="/auth/logout" class="icon">Logout</a>
+    <% } else { %>
+      <a href="/auth/login" class="icon">Login</a>
+      <a href="/auth/register" class="icon">Register</a>
+    <% } %>
+  </div>
+</header>

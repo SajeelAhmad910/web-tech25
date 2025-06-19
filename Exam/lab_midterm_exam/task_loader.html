@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond&display=swap" rel="stylesheet">
+  <title>Loake Inspired</title>
+  <link rel="stylesheet" href="task_loader.css" />
+</head>
+
+<body>
+  <!-- Top Bar -->
+  <div class="top-bar">
+    <div class="left">Shipping to: 🇵🇰</div>
+    <div class="center">FREE UK STANDARD DELIVERY & FREE UK RETURNS!</div>
+    <div class="right">
+      <a href="#">Store Locator</a>
+      <a href="#">Factory Outlet</a>
+      <a href="#">Our Journal</a>
+    </div>
+  </div>
+
+  <!-- Navigation Header -->
+  <header class="main-header">
+    <nav class="nav-left">
+      <a href="#">New Arrivals</a>
+      <a href="#">Men's Shoes</a>
+      <a href="#">Accessories</a>
+      <a href="#">Repairs</a>
+    </nav>
+    <div class="logo">Loake<br><span>Shoemakers</span></div>
+    <div class="nav-right">
+      <input type="text" placeholder="Search..." />
+      <span class="icon">👤</span>
+      <span class="icon">🛒<sup>0</sup></span>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="task-section">
+    <div class="task-card">
+      <h3>Assignment 1</h3>
+      <p>CV using HTML & CSS</p>
+      <button onclick="loadTask('Assignment_1/index.html')">View</button>
+    </div>
+    <div class="task-card">
+      <h3>Assignment 2</h3>
+      <p>E-Commerce Landing Page using HTML & CSS</p>
+      <button onclick="loadTask('Assignment_2/index.html')">View</button>
+    </div>
+    <div class="task-card">
+      <h3>Lab Task 1</h3>
+      <p>E-Commerce Landing Page using HTML, CSS & Bootstrap</p>
+      <button onclick="loadTask('Labtask_1/index.html')">View</button>
+    </div>
+    <div class="task-card">
+      <h3>Lab Task 2</h3>
+      <p>Implementing a Checkout Page with Client-Side Validation</p>
+      <button onclick="loadTask('Labtask_2/index.html')">View</button>
+    </div>
+  </main>
+
+  <!-- iFrame to load tasks -->
+  <div class="iframe-wrapper">
+    <iframe id="task-frame" src="" frameborder="0"></iframe>
+  </div>
+
+    <!-- Footer -->
+
+    <footer class="site-footer">
+        <div class="footer-container">
+          <div class="footer-columns">
+    
+            <!-- Contact Section -->
+            <div class="footer-column">
+              <div class="enquiries-wrapper">
+                <div class="enquiry">
+                  <h4>GENERAL ENQUIRIES</h4>
+                  <p>+44 (0) 1536 415 411</p>
+                  <a href="mailto:enquiries@loake.co.uk">enquiries@loake.co.uk</a>
+                </div>
+    
+                <div class="enquiry">
+                  <h4>ONLINE ENQUIRIES</h4>
+                  <p>+44 (0) 1536 315 900</p>
+                  <a href="mailto:web.enquiries@loake.co.uk">web.enquiries@loake.co.uk</a>
+                </div>
+              </div>
+    
+              <p class="note">
+                Our Customer Services department is open Monday to Thursday from 8:45am to 5pm GMT, and Friday from 8:45am
+                to 4pm GMT. We are closed at weekends.
+              </p>
+              <p>
+                Sign up to our email newsletter below to be first inline when we announce new styles, competitions and much
+                more! You can unsubscribe at any time.
+              </p>
+    
+              <label for="newsletter">NEWSLETTER SIGN UP</label>
+              <input type="email" placeholder="Email address..." />
+              <button>Sign Up</button>
+            </div>
+    
+    
+            <!-- About Section -->
+            <div class="footer-column">
+              <h4>ABOUT LOAKE</h4>
+              <ul>
+                <li><a href="#"><i class="fab fa-facebook-f"></i> Facebook</a></li>
+                <li><a href="#"><i class="fab fa-instagram"></i> Instagram</a></li>
+                <li><a href="#"><i class="fas fa-book-open"></i> Loake Journal</a></li>
+                <li><a href="#"><i class="fas fa-landmark"></i> History & Heritage</a></li>
+                <li><a href="#"><i class="fas fa-tools"></i> Craftsmanship</a></li>
+                <li><a href="#"><i class="fas fa-th-large"></i> Our Collections</a></li>
+                <li><a href="#"><i class="fas fa-store"></i> Find a Loake Store</a></li>
+              </ul>
+            </div>
+    
+            <!-- Crest Section -->
+            <div class="footer-column crest">
+              <img src="images/footer-logo-kings.jpg" alt="Loake Royal Crest" />
+              <p>BY APPOINTMENT TO<br>HIS MAJESTY THE KING<br>MANUFACTURER OF MEN'S FOOTWEAR<br>LOAKE BROS. LTD,
+                NORTHAMPTONSHIRE</p>
+            </div>
+    
+          </div>
+    
+          <!-- Payment Icons -->
+          <div class="payment-icons">
+            <img src="images/footer-payment-logos.svg" alt="Payment Logos" />
+          </div>
+    
+          <!-- Copyright -->
+          <p class="copyright">
+            &copy; 2025 Loake Bros Ltd. All rights reserved.<br>
+            All images and content within this website is solely owned by Loake Bros Ltd and cannot be used by any 3rd party
+            without consent.<br>
+            This website is best viewed using Google Chrome, Safari and newer internet browsers.
+          </p>
+        </div>
+      </footer>
+    
+      <div class="footer-links-bar">
+        <ul class="footer-links">
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">Delivery & Returns</a></li>
+          <li><a href="#">FAQs</a></li>
+          <li><a href="#">Careers</a></li>
+          <li><a href="#">Privacy</a></li>
+          <li><a href="#">Terms</a></li>
+          <li><a href="#">Cookies</a></li>
+          <li><a href="#">Sustainability</a></li>
+          <li><a href="#">Klarna</a></li>
+        </ul>
+      </div>  
+
+  <script src="task_loader.js"></script>
+</body>
+
+</html>
